@@ -1,0 +1,15 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/OutdoorsScene.unity
+    guid: 8124e5870f4fd4c779e7a5f994e84ad1
+  m_configObjects:
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: a209e5805f6d8410982f531a5a2d385d,
+      type: 2}
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 1500cd93eea1d4c1ba6e0e6e8e1c9bdb,
+      type: 2}
