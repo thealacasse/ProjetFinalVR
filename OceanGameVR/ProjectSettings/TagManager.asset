@@ -6,11 +6,12 @@ TagManager:
   tags:
   - coquillage
   - zone1
+  - zoneEau
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - ground
   - Water
   - UI
   - 

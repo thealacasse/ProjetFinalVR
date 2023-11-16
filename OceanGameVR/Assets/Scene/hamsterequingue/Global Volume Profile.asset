@@ -40,6 +40,52 @@ MonoBehaviour:
   blueOutBlueIn:
     m_OverrideState: 0
     m_Value: 100
+--- !u!114 &-5730608765798555199
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcf384b154398e341b6b29969c078198, type: 3}
+  m_Name: MotionBlur
+  m_EditorClassIdentifier: 
+  active: 1
+  quality:
+    m_OverrideState: 0
+    m_Value: 1
+  intensity:
+    m_OverrideState: 1
+    m_Value: 9.9
+  maximumVelocity:
+    m_OverrideState: 0
+    m_Value: 200
+  minimumVelocity:
+    m_OverrideState: 0
+    m_Value: 2
+  cameraMotionBlur:
+    m_OverrideState: 0
+    m_Value: 1
+  specialCameraClampMode:
+    m_OverrideState: 0
+    m_Value: 0
+  cameraVelocityClamp:
+    m_OverrideState: 0
+    m_Value: 0.05
+  cameraTranslationVelocityClamp:
+    m_OverrideState: 0
+    m_Value: 0.05
+  cameraRotationVelocityClamp:
+    m_OverrideState: 0
+    m_Value: 0.03
+  depthComparisonExtent:
+    m_OverrideState: 0
+    m_Value: 1
+  m_SampleCount:
+    m_OverrideState: 0
+    m_Value: 8
 --- !u!114 &-164131360971188726
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -63,8 +109,8 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: {x: 0.5, y: 0.5}
   intensity:
-    m_OverrideState: 0
-    m_Value: 0
+    m_OverrideState: 1
+    m_Value: 0.388
   smoothness:
     m_OverrideState: 0
     m_Value: 0.2
@@ -99,7 +145,7 @@ MonoBehaviour:
   - {fileID: 2113114184471125937}
   - {fileID: 5595688697479321288}
   - {fileID: -164131360971188726}
-  - {fileID: 7143809842398213215}
+  - {fileID: -5730608765798555199}
 --- !u!114 &2113114184471125937
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -118,13 +164,13 @@ MonoBehaviour:
     m_Value: 3
   focusMode:
     m_OverrideState: 1
-    m_Value: 2
+    m_Value: 1
   focusDistance:
     m_OverrideState: 1
     m_Value: 2
   focusDistanceMode:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 1
   nearFocusStart:
     m_OverrideState: 1
     m_Value: 2
@@ -142,13 +188,13 @@ MonoBehaviour:
     m_Value: 6
   m_NearMaxBlur:
     m_OverrideState: 1
-    m_Value: 7.24
+    m_Value: 0.21
   m_FarSampleCount:
     m_OverrideState: 1
-    m_Value: 12
+    m_Value: 10
   m_FarMaxBlur:
     m_OverrideState: 1
-    m_Value: 1.84
+    m_Value: 9.63
   m_Resolution:
     m_OverrideState: 1
     m_Value: 4
@@ -195,101 +241,13 @@ MonoBehaviour:
   active: 1
   lift:
     m_OverrideState: 1
-    m_Value: {x: 0.96651155, y: 0.9166057, z: 1, w: 0}
+    m_Value: {x: 0.968, y: 0.92, z: 1, w: 0}
   gamma:
     m_OverrideState: 1
-    m_Value: {x: 1, y: 0.9465531, z: 0.9128634, w: 0}
+    m_Value: {x: 0.97, y: 0.98149997, z: 1, w: 0}
   gain:
     m_OverrideState: 1
-    m_Value: {x: 0.96945727, y: 0.9610938, z: 1, w: 0}
---- !u!114 &7143809842398213215
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 953beb541740ddc499d005ee80c9ff29, type: 3}
-  m_Name: Fog
-  m_EditorClassIdentifier: 
-  active: 1
-  quality:
-    m_OverrideState: 0
-    m_Value: 1
-  enabled:
-    m_OverrideState: 0
-    m_Value: 1
-  colorMode:
-    m_OverrideState: 0
-    m_Value: 1
-  color:
-    m_OverrideState: 0
-    m_Value: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-  tint:
-    m_OverrideState: 0
-    m_Value: {r: 1, g: 1, b: 1, a: 1}
-  maxFogDistance:
-    m_OverrideState: 0
-    m_Value: 5000
-  mipFogMaxMip:
-    m_OverrideState: 0
-    m_Value: 0.5
-  mipFogNear:
-    m_OverrideState: 0
-    m_Value: 0
-  mipFogFar:
-    m_OverrideState: 0
-    m_Value: 1000
-  baseHeight:
-    m_OverrideState: 0
-    m_Value: 0
-  maximumHeight:
-    m_OverrideState: 0
-    m_Value: 50
-  meanFreePath:
-    m_OverrideState: 1
-    m_Value: 400
-  enableVolumetricFog:
-    m_OverrideState: 0
-    m_Value: 0
-  albedo:
-    m_OverrideState: 0
-    m_Value: {r: 1, g: 1, b: 1, a: 1}
-  globalLightProbeDimmer:
-    m_OverrideState: 0
-    m_Value: 1
-  depthExtent:
-    m_OverrideState: 0
-    m_Value: 64
-  denoisingMode:
-    m_OverrideState: 0
-    m_Value: 2
-  anisotropy:
-    m_OverrideState: 0
-    m_Value: 0
-  sliceDistributionUniformity:
-    m_OverrideState: 0
-    m_Value: 0.75
-  m_FogControlMode:
-    m_OverrideState: 0
-    m_Value: 0
-  screenResolutionPercentage:
-    m_OverrideState: 0
-    m_Value: 12.5
-  volumeSliceCount:
-    m_OverrideState: 0
-    m_Value: 64
-  m_VolumetricFogBudget:
-    m_OverrideState: 0
-    m_Value: 0.5
-  m_ResolutionDepthRatio:
-    m_OverrideState: 0
-    m_Value: 0.5
-  directionalLightsOnly:
-    m_OverrideState: 0
-    m_Value: 0
+    m_Value: {x: 0.9686667, y: 0.96, z: 1, w: 0}
 --- !u!114 &8905711002215287130
 MonoBehaviour:
   m_ObjectHideFlags: 3

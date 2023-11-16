@@ -9,7 +9,9 @@ public class requiguingue: MonoBehaviour
 {
     public int count;
     public GameObject coquillage;
-    public GameObject lumiereCoquillage1;
+    public GameObject eau;
+
+
     // Start is called before the first frame update
     private void OnTriggerEnter(Collider other)
     {
@@ -20,22 +22,25 @@ public class requiguingue: MonoBehaviour
             other.gameObject.SetActive(false);
             count++;
         }
-      else if
-            (other.tag == "zone1")
-            {
-                lumiereCoquillage1.SetActive(true);
-            }
-        
+       
+        if (other.tag == "zoneEau")
+        {
+
+            eau.SetActive(true);
+        }
     }
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.tag == "zone1")
+
+   
+    
+        if (other.tag == "zoneEau")
         {
-          lumiereCoquillage1.SetActive(false);
+            eau.SetActive(false);
         }
-      
-    }
+    
+}
 
     // Update is called once per frame
     public void MiseAZero()
@@ -45,3 +50,8 @@ coquillage.transform.GetChild(i).GetChild(0).gameObject.SetActive(true);
         
     }
 }
+
+
+
+
+
