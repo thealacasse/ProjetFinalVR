@@ -8,7 +8,7 @@ public class requiguingue: MonoBehaviour
 
 {
     public int count;
-    public GameObject coquillage;
+    
     public GameObject eau;
 
 
@@ -17,11 +17,7 @@ public class requiguingue: MonoBehaviour
     {
        
       
-      if (other.tag == "coquillage")
-        {
-            other.gameObject.SetActive(false);
-            count++;
-        }
+      
        
         if (other.tag == "zoneEau")
         {
@@ -39,16 +35,26 @@ public class requiguingue: MonoBehaviour
         {
             eau.SetActive(false);
         }
-    
-}
+        else if (other.tag == "coquillage")
+        {
+            other.gameObject.SetActive(false);
+            count++;
+        }
+
+    }
 
     // Update is called once per frame
-    public void MiseAZero()
-    {for(int i=0; i<coquillage.transform.childCount; i++){
-coquillage.transform.GetChild(i).GetChild(0).gameObject.SetActive(true);
-      }
-        
-    }
+
+    //   public void MiseAZero()
+
+    // {for(int i=0; i<coquillage.transform.childCount; i++){
+
+    //  coquillage.transform.GetChild(i).GetChild(0).gameObject.SetActive(true);
+
+    // }
+
+
+    // }
 }
 
 
