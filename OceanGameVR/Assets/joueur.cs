@@ -7,10 +7,11 @@ using TMPro;
 public class requiguingue: MonoBehaviour
 
 {
+    public GameObject coquillage;
     public int count;
     
     public GameObject eau;
-
+    public TextMeshProUGUI pointage;
 
     // Start is called before the first frame update
     private void OnTriggerEnter(Collider other)
@@ -24,6 +25,12 @@ public class requiguingue: MonoBehaviour
 
             eau.SetActive(true);
         }
+        else if (other.tag == "coquillage")
+        {
+            other.gameObject.SetActive(false);
+            count++;
+            pointage.text = count.ToString();
+        }
     }
 
     private void OnTriggerExit(Collider other)
@@ -35,26 +42,25 @@ public class requiguingue: MonoBehaviour
         {
             eau.SetActive(false);
         }
-        else if (other.tag == "coquillage")
-        {
-            other.gameObject.SetActive(false);
-            count++;
-        }
+     
 
     }
 
     // Update is called once per frame
 
-    //   public void MiseAZero()
+    /*  public void MiseAZero()
 
-    // {for(int i=0; i<coquillage.transform.childCount; i++){
+    {
+        count = 0;
+        for(int i=0; i<coquillage.transform.childCount; i++){
 
-    //  coquillage.transform.GetChild(i).GetChild(0).gameObject.SetActive(true);
-
-    // }
+     coquillage.transform.GetChild(i).GetChild(0).gameObject.SetActive(true);
 
 
-    // }
+     }
+
+
+    }*/
 }
 
 

@@ -4291,7 +4291,7 @@ PrefabInstance:
     - target: {fileID: 8115198052279892330, guid: 0279d4cafb6782546b45e88762127046,
         type: 3}
       propertyPath: m_Name
-      value: joueur 1
+      value: joueur essaie
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4333,7 +4333,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2102498285
 RectTransform:
   m_ObjectHideFlags: 0

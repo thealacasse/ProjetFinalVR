@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 6.4618387, g: 6.769662, b: 9.816575, a: 1}
+  m_IndirectSpecularColor: {r: 6.462022, g: 6.7697535, b: 9.816743, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1454,7 +1454,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &220812779
 Transform:
   m_ObjectHideFlags: 0
@@ -3105,6 +3105,27 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 620184852}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &696036389 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3240500166232203459, guid: 406fb1936eeb64d49a3d0a2245211be7,
+    type: 3}
+  m_PrefabInstance: {fileID: 815215169}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &696036391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 696036389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: edbe02e7af47eb44d9e8a8d7de629ba7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coquillage: {fileID: 1227134997}
+  count: 0
+  eau: {fileID: 220812778}
 --- !u!1 &808060030
 GameObject:
   m_ObjectHideFlags: 0
@@ -3241,7 +3262,7 @@ PrefabInstance:
     - target: {fileID: 3240500166232203459, guid: 406fb1936eeb64d49a3d0a2245211be7,
         type: 3}
       propertyPath: m_Name
-      value: www
+      value: joueur1
       objectReference: {fileID: 0}
     - target: {fileID: 3240500166232203459, guid: 406fb1936eeb64d49a3d0a2245211be7,
         type: 3}
@@ -3257,6 +3278,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_RotationInput.m_Action.m_Id
       value: fb2434bd-c728-450c-9cb7-557d70968f64
+      objectReference: {fileID: 0}
+    - target: {fileID: 4283081915240353225, guid: 406fb1936eeb64d49a3d0a2245211be7,
+        type: 3}
+      propertyPath: m_PositionInput.m_Action.m_Name
+      value: Position Input
+      objectReference: {fileID: 0}
+    - target: {fileID: 4283081915240353225, guid: 406fb1936eeb64d49a3d0a2245211be7,
+        type: 3}
+      propertyPath: m_RotationInput.m_Action.m_Name
+      value: Rotation Input
       objectReference: {fileID: 0}
     - target: {fileID: 4283081915240353225, guid: 406fb1936eeb64d49a3d0a2245211be7,
         type: 3}
@@ -3377,6 +3408,10 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3240500166232203459, guid: 406fb1936eeb64d49a3d0a2245211be7,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 696036391}
     - targetCorrespondingSourceObject: {fileID: 2260022838978309114, guid: 406fb1936eeb64d49a3d0a2245211be7,
         type: 3}
       insertIndex: -1
@@ -4335,36 +4370,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_InteractionManager
       value: 
-      objectReference: {fileID: 815215171}
+      objectReference: {fileID: 0}
     - target: {fileID: 3096951124141238554, guid: 2d44bb045c84bce4ab439f18cf3403a6,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 21.70925
+      value: 11.155515
       objectReference: {fileID: 0}
     - target: {fileID: 3096951124141238554, guid: 2d44bb045c84bce4ab439f18cf3403a6,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 21.70925
+      value: 11.155515
       objectReference: {fileID: 0}
     - target: {fileID: 3096951124141238554, guid: 2d44bb045c84bce4ab439f18cf3403a6,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 21.70925
+      value: 11.155515
       objectReference: {fileID: 0}
     - target: {fileID: 3096951124141238554, guid: 2d44bb045c84bce4ab439f18cf3403a6,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -48.976
+      value: -48.984
       objectReference: {fileID: 0}
     - target: {fileID: 3096951124141238554, guid: 2d44bb045c84bce4ab439f18cf3403a6,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.363
+      value: -1.2976
       objectReference: {fileID: 0}
     - target: {fileID: 3096951124141238554, guid: 2d44bb045c84bce4ab439f18cf3403a6,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 6.616
+      value: 6.6059
       objectReference: {fileID: 0}
     - target: {fileID: 3096951124141238554, guid: 2d44bb045c84bce4ab439f18cf3403a6,
         type: 3}
@@ -8110,6 +8145,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: XR Device Simulator
+      objectReference: {fileID: 0}
+    - target: {fileID: 6598815579406187037, guid: 18ddb545287c546e19cc77dc9fbb2189,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

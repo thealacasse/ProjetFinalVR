@@ -27,6 +27,7 @@ public class menu : MonoBehaviour
         Choix.SetActive(true);
       
     }
+
     public void requins()
     {
         Choix.SetActive(true);
