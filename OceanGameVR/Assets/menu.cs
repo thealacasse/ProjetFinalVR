@@ -10,6 +10,9 @@ public class menu : MonoBehaviour
     public GameObject Menu;
     public GameObject instruction;
     public GameObject Choix;
+    public GameObject requin;
+    public GameObject peinguin;
+    public GameObject hamster;
 
 
 
@@ -18,9 +21,15 @@ public class menu : MonoBehaviour
         Menu.SetActive(false);
         instruction.SetActive(true);
     }
-    public void jouer()
+    public void suivant()
     {
-        SceneManager.LoadScene("animation_1");
+        Choix.SetActive(true);
+        instruction.SetActive(false);
+    }
+    public void requins()
+    {
+        Choix.SetActive(true);
+        SceneManager.LoadScene("requinguingue");
     }
     void Start()
     {
