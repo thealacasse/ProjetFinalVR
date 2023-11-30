@@ -442,57 +442,25 @@ MonoBehaviour:
   m_PositionInput:
     m_UseReference: 0
     m_Action:
-      m_Name: Position
+      m_Name: 
       m_Type: 0
-      m_ExpectedControlType: Vector3
+      m_ExpectedControlType: 
       m_Id: 
       m_Processors: 
       m_Interactions: 
-      m_SingletonActionBindings:
-      - m_Name: 
-        m_Id: 
-        m_Path: <XRHMD>/centerEyePosition
-        m_Interactions: 
-        m_Processors: 
-        m_Groups: 
-        m_Action: Position
-        m_Flags: 0
-      - m_Name: 
-        m_Id: e2b8befd-6399-4161-be17-0d7c90c84e1c
-        m_Path: <HandheldARInputDevice>/devicePosition
-        m_Interactions: 
-        m_Processors: 
-        m_Groups: 
-        m_Action: Position
-        m_Flags: 0
+      m_SingletonActionBindings: []
       m_Flags: 0
     m_Reference: {fileID: 0}
   m_RotationInput:
     m_UseReference: 0
     m_Action:
-      m_Name: Rotation
+      m_Name: 
       m_Type: 0
-      m_ExpectedControlType: Quaternion
+      m_ExpectedControlType: 
       m_Id: 
       m_Processors: 
       m_Interactions: 
-      m_SingletonActionBindings:
-      - m_Name: 
-        m_Id: 
-        m_Path: <XRHMD>/centerEyeRotation
-        m_Interactions: 
-        m_Processors: 
-        m_Groups: 
-        m_Action: Rotation
-        m_Flags: 0
-      - m_Name: 
-        m_Id: cf26846a-0666-41bb-85bf-49d6dca24f5b
-        m_Path: <HandheldARInputDevice>/deviceRotation
-        m_Interactions: 
-        m_Processors: 
-        m_Groups: 
-        m_Action: Rotation
-        m_Flags: 0
+      m_SingletonActionBindings: []
       m_Flags: 0
     m_Reference: {fileID: 0}
   m_TrackingStateInput:
