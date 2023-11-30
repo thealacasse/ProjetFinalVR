@@ -5,9 +5,15 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scene/OutdoorsScene.unity
     guid: 8124e5870f4fd4c779e7a5f994e84ad1
+  - enabled: 1
+    path: Assets/Scene/jojo.unity
+    guid: 507213458b9cfdd4399d11cae17aaf54
+  - enabled: 1
+    path: Assets/Scene/hamsterequingue.unity
+    guid: 29e17ec7fa9f30a468cb250ad040f079
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 6b209fe9711bee6499dce91b0a481731,
       type: 2}

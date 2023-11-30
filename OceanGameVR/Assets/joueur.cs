@@ -4,51 +4,57 @@ using UnityEngine;
 using UnityEngine.Video;
 using TMPro;
 
-public class requiguingue: MonoBehaviour
+
+public class requiguingue : MonoBehaviour
 
 {
     public GameObject coquillage;
     public int count;
-    
-    public GameObject eau;
+
     public TextMeshProUGUI pointage;
 
     // Start is called before the first frame update
-    private void OnTriggerEnter(Collider other)
-    {
-       
-      
-      
-       
-        if (other.tag == "zoneEau")
-        {
+    //private void OnTriggerEnter(Collider other)
+    //{
 
-            eau.SetActive(true);
-        }
-        else if (other.tag == "coquillage")
+    
+
+    //     if (other.tag == "coquillage")
+    //    {
+    //        Debug.Log("coquillage");
+    //        other.gameObject.SetActive(false);
+    //        count++;
+    //        //pointage.text = count.ToString();
+    //    }
+    //}
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "coquillage")
         {
-            other.gameObject.SetActive(false);
+            Debug.Log("coquillage");
+            collision.gameObject.SetActive(false);
             count++;
             pointage.text = count.ToString();
+            if(count>= 0)
+            {
+                StartCoroutine("Reussite");
+            }
         }
     }
 
     private void OnTriggerExit(Collider other)
     {
 
-   
+
+
     
-        if (other.tag == "zoneEau")
-        {
-            eau.SetActive(false);
-        }
-     
 
     }
 
     // Update is called once per frame
 
-    /*  public void MiseAZero()
+    public void MiseAZero()
 
     {
         count = 0;
@@ -60,8 +66,11 @@ public class requiguingue: MonoBehaviour
      }
 
 
-    }*/
+    }
+    
+   
 }
+
 
 
 

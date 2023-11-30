@@ -27,12 +27,28 @@ public class menu : MonoBehaviour
         Choix.SetActive(true);
       
     }
-
     public void requins()
     {
         Choix.SetActive(true);
-        SceneManager.LoadScene("requinguingue");
+        SceneManager.LoadScene("hamsterequingue");
     }
+
+    public void retour()
+    {
+        Choix.SetActive(false);
+        instruction.SetActive(true);
+    }
+    public void peinguins()
+    {
+        Choix.SetActive(true);
+        SceneManager.LoadScene("hamsterequingue");
+    }
+    public void hamsters()
+    {
+        Choix.SetActive(true);
+        SceneManager.LoadScene("hamsterequingue");
+    }
+    
     void Start()
     {
         
