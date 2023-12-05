@@ -6,52 +6,59 @@ using TMPro;
 
 
 
-public class requiguingue : MonoBehaviour
+public class joueur: MonoBehaviour
 
 {
-    public GameObject joueurScript;
-    public ScriptableObject joueur; 
+    public GameObject bravo;
+    
 
-    public void compte()
-    {
-        joueur.count += 1;
-    }
-
-   
-    public GameObject coquillage;
     public int count;
+
+    public GameObject coquillage;
+    
 
     public TextMeshProUGUI pointage;
 
     // Start is called before the first frame update
-    //private void OnTriggerEnter(Collider other)
-    //{
-
-    
-
-    //     if (other.tag == "coquillage")
-    //    {
-    //        Debug.Log("coquillage");
-    //        other.gameObject.SetActive(false);
-    //        count++;
-    //        //pointage.text = count.ToString();
-    //    }
-    //}
-
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
-        if (collision.gameObject.tag == "coquillage")
+
+
+
+        if (other.tag == "coquillage")
         {
             Debug.Log("coquillage");
-            collision.gameObject.SetActive(false);
+            other.gameObject.SetActive(false);
             count++;
             pointage.text = count.ToString();
-            if(count>= 0)
-            {
-                StartCoroutine("Reussite");
-            }
+           if(count>= 2)
+                 {
+                      StartCoroutine("Reussite");
+                 }
         }
     }
+    private IEnumerator Reussite() {
+        bravo.SetActive(true);
+        yield return new WaitForSeconds(2f);
+        yield break;
+    }
+
+
+    //private void OnCollisionEnter(Collision collision)
+    //{
+    //    if (collision.gameObject.tag == "coquillage")
+    //    {
+    //        Debug.Log("coquillage");
+    //        collision.gameObject.SetActive(false);
+
+    //        count += 1;
+    //        pointage.text = count.ToString();
+    //        //if(count>= 0)
+    //        //{
+    //        //    StartCoroutine("Reussite");
+    //        //}
+    //    }
+    //}
 
     private void OnTriggerExit(Collider other)
     {
@@ -67,7 +74,7 @@ public class requiguingue : MonoBehaviour
     public void MiseAZero()
 
     {
-        count = 0;
+        
         for(int i=0; i<coquillage.transform.childCount; i++){
 
      coquillage.transform.GetChild(i).GetChild(0).gameObject.SetActive(true);

@@ -13,9 +13,14 @@ public class menu : MonoBehaviour
     public GameObject requin;
     public GameObject peinguin;
     public GameObject hamster;
+    public GameObject btnRecommencer;
+    public GameObject fin;
 
 
-
+    public void recommencer()
+    {
+        fin.SetActive(false);
+    }
     public void commencer()
     {
         Menu.SetActive(false);
