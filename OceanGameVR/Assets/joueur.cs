@@ -5,9 +5,14 @@ using UnityEngine.Video;
 using TMPro;
 
 
+
 public class requiguingue : MonoBehaviour
 
 {
+    public GameObject joueurScript;
+
+
+   
     public GameObject coquillage;
     public int count;
 
