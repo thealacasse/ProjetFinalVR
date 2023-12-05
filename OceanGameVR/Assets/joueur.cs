@@ -10,7 +10,12 @@ public class requiguingue : MonoBehaviour
 
 {
     public GameObject joueurScript;
+    public ScriptableObject joueur; 
 
+    public void compte()
+    {
+        joueur.count += 1;
+    }
 
    
     public GameObject coquillage;

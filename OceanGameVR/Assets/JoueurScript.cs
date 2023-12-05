@@ -4,26 +4,30 @@ using UnityEngine;
 
 public class JoueurScript : MonoBehaviour
 {
-    // Start is called before the first frame update
 
-    public AudioSource Cristaux;
+    public Script joueur;
 
+    public void compte()
+    {
+        joueur.count += 1;
+    }
+    public GameObject ZoneCristaux;
 
     private void OnTriggerEnter(Collider other)
     {
 
 
 
-    /*  if (other.tag == "zone1")
+     if (other.tag == "zone1")
        {
           Debug.Log("coquillage");
-            Cristaux.Play();
-        
-     }
+            ZoneCristaux.SetActive(false);
+
+        }
         else
         {
-            Cristaux.Pause();
-        }*/
+            ZoneCristaux.SetActive(true);
+        }
     }
     void Start()
     {
