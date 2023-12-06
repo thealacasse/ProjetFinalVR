@@ -20,6 +20,11 @@ public class menu : MonoBehaviour
     public void recommencer()
     {
         fin.SetActive(false);
+        SceneManager.LoadScene("jojo");
+        
+
+      
+
     }
     public void commencer()
     {

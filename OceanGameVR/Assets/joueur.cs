@@ -31,7 +31,7 @@ public class joueur: MonoBehaviour
             other.gameObject.SetActive(false);
             count++;
             pointage.text = count.ToString();
-           if(count>= 2)
+           if(count>= 8)
                  {
                       StartCoroutine("Reussite");
                  }
